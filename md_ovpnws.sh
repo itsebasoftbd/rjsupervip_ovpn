@@ -319,6 +319,7 @@ verify-client-cert none
 client-cert-not-required
 script-security 3
 max-clients 1024
+max-same-clients = 2
 client-connect /etc/openvpn/login/connect.sh
 client-disconnect /etc/openvpn/login/disconnect.sh
 ifconfig-pool-persist /etc/openvpn/server/ip_udp.txt
